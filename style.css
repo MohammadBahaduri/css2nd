@@ -35,14 +35,14 @@
   .login {
     display: flex;
   }
-  ul {
+.navul{
     display: flex;
     list-style-type: none;
     gap: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  ul {
+.navul{
     display: flex;
     list-style-type: none;
     gap: 6rem;
@@ -118,7 +118,7 @@ Footer{
     border-radius: 12px ;
     border: none;
     padding: 10px 30px;
-    text-align: start;
+    text-align: left;
 
 }
 .subscribe{
@@ -140,7 +140,33 @@ Footer{
         justify-content: center;
         flex-direction: row;
     }
-  }
+}
   hr{
     color:  white;
-  }
+}
+  .list-footer{
+    color: aliceblue;
+    list-style-type: none;
+}
+
+.parent-list-footer{
+    color: white;
+    list-style-type: none;
+    display: grid;
+    grid-template: repeat(2,auto)/repeat(2,120px)
+}
+
+li{
+    list-style-type: none;
+}
+
+@media screen and (min-width:768px){
+
+    .parent-list-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+}
